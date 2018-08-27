@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="XA-Compactible"  content="IE=Edge" >
+		<meta charset="UTE-8">
+		<title> SAP</title>
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-libs="sap.m"
+			displayBlock="true"
+			data-sap-ui-resourceroots='{
+			"opensap.w1u1": "./"}' >
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				sap.ui.xmlview({
+						viewName:"opensap.w1u1.view.App"
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+	<body class="sapUIBody" id="content" >
+		<div id="content"></div>
+	</body>
+</html>
